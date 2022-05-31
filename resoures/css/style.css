@@ -1,28 +1,4 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css");
-@font-face{
-    font-family: 'Bold';
-    src:url(/resoures/font/NotoSansKR/Bold.otf);
-}
-@font-face{
-    font-family: 'Regular';
-    src:url(/resoures/font/NotoSansKR/Regular.otf)
-}
-@font-face{
-    font-family: 'Medium';
-    src: url(/resoures/font/NotoSansKR/Medium.otf);
-}
-@font-face{
-    font-family: 'Black';
-    src: url(/resoures/font/NotoSansKR/Black.otf);
-}
-@font-face{
-    font-family: 'Light';
-    src: url(/resoures/font/NotoSansKR/Light.otf);
-}
-@font-face{
-    font-family: 'Thin';
-    src: url(/resoures/font/NotoSansKR/Thin.otf);
-}
 *{
     margin: 0;
     padding: 0;
