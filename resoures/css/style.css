@@ -28,14 +28,14 @@
     margin: 0 auto;
     font-family: 'bold';
 }
-.text-bar h2{
+.text-bar h1{
     color: white;
-    font-size: 39px;
+    font-size: 3vw;
     padding: 20px;
 }
 .text-bar span{
     color: #aaaaaa;
-    font-size: 20px;
+    font-size: 1vw;
 }
 .main-left{
     width: 60%;
@@ -52,8 +52,8 @@ table{
     border-collapse: collapse;
 }
 .login-menu{
-    width: 80%;
-    height: 100%;
+    width: 500px;
+    height: 950px;
     margin: 0 auto;
     display: flex;
     justify-content: center;
@@ -143,7 +143,7 @@ table{
     background-color: #5D6DFC;
     color: white;
     font-weight: 700;
-    font-size: 16px;
+    font-size: 0.9vw;
 }
 .find-btn{
     position: relative;
@@ -153,15 +153,16 @@ table{
     justify-content: space-around;
     font-size: 12px;
     padding: 8px 10px 10px 10px;
+    text-align: center;
     font-family: 'medium';
 }
 .find-btn li{
-    height: 20%;
-    margin-left: 20px;
+    /* width: 100%;
+    height: 20px; */
 }
 .find-btn li::before{
     content: "|";
-    padding-right: 40px;    
+    padding-right: 2vw;    
 }
 .find-btn li:first-child::before{
     content: none;

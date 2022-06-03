@@ -30,12 +30,12 @@
 }
 .text-bar h2{
     color: white;
-    font-size: 39px;
+    font-size: 3vw;
     padding: 20px;
 }
 .text-bar span{
     color: #aaaaaa;
-    font-size: 20px;
+    font-size: 1vw;
 }
 .main-left{
     width: 60%;
@@ -52,8 +52,8 @@ table{
     border-collapse: collapse;
 }
 .login-menu{
-    width: 80%;
-    height: 100%;
+    width: 500px;
+    height: 950px;
     margin: 0 auto;
     display: flex;
     justify-content: center;
@@ -116,8 +116,8 @@ table{
 }
 .email-input>i{
     position: absolute;
-    left: 10%;
-    top: 27%;
+    left: 9%;
+    top: 35%;
 }
 .pwd-input{
     font-family: 'regular';
@@ -145,8 +145,8 @@ table{
 }
 .pwd-input>i{
     position: absolute;
-    left: 10%;
-    top: 27%;
+    left: 9%;
+    top: 35%;
 }
 .pwds-input{
     font-family: 'regular';
@@ -174,8 +174,8 @@ table{
 }
 .pwds-input>i{
     position: absolute;
-    left: 10%;
-    top: 27%;
+    left: 9%;
+    top: 35%;
 }
 .name-input{
     font-family: 'regular';
@@ -203,8 +203,8 @@ table{
 }
 .name-input>i{
     position: absolute;
-    left: 10%;
-    top: 27%;
+    left: 9%;
+    top: 35%;
 }
 .call-input{
     font-family: 'regular';
@@ -232,8 +232,8 @@ table{
 }
 .call-input>i{
     position: absolute;
-    left: 10%;
-    top: 27%;
+    left: 9%;
+    top: 35%;
 }
 .form-btn{
     position: relative;
