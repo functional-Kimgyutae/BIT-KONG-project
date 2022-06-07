@@ -1,0 +1,19 @@
+.con{
+    height: 100vh;
+    margin-left: 300px;
+    width: calc(100vw - 300px);
+    padding: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 50px;
+}
+.con > div {
+    border-radius: 5px;
+    background-color: #fff;
+}
+.con > .coin-list {
+    grid-column: 2;
+    grid-row: 1/3;
+}
+
