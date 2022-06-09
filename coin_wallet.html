@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,7 +10,9 @@
     <link rel="stylesheet" href="./resoures/css/header.css">
     <link rel="stylesheet" href="./resoures/css/coin_wallert.css">
     <link rel="stylesheet" href="./bootstrap-5.1.3-dist/css/bootstrap.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
 </head>
+
 <body>
     <header>
         <div class="logo">
@@ -33,7 +36,7 @@
             <h4>COPYRIGHT&copy;콩콩식식 <br>ALL RIGHTS RESERVED</h4>
         </footer>
     </header>
-    <div class="con"> 
+    <div class="con">
         <div class="assets">
             <h2>내 보유자산</h2>
             <div class="assets-list">
@@ -42,50 +45,95 @@
                         <h4>보유KRW</h4>
                         <span>1,163,046,578</span>
                     </li>
+                    <li class="bar"></li>
                     <li>
                         <h4>총 보유자산</h4>
                         <span>1,622,787,086</span>
                     </li>
                 </ul>
             </div>
-            <table>
-                <tr>
-                    <td>총매수</td>
-                    <td>424,710,719</td>
-                    <td>평가순익</td>
-                    <td><span>35,029,790</span></td>
-                </tr>
-                <tr>
-                    <td>총평가</td>
-                    <td>459,740,508</td>
-                    <td>수익률</td>
-                    <td><span>8.25%</span></td>
-                </tr>
-            </table>
+            <div class="info">
+                <ul>
+                    <li>
+                        <p>총매수</p>
+                    </li>
+                    <li>
+                        <p>424,710,719</p>
+                    </li>
+                    <li>
+                        <p>평가순익</p>
+                    </li>
+                    <li>
+                        <p><span>35,029,790</span></p>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <p>총평가</p>
+                    </li>
+                    <li>
+                        <p>459,740,508</p>
+                    </li>
+                    <li>
+                        <p>수익률</p>
+                    </li>
+                    <li>
+                        <p><span>8.25%</span></p>
+                    </li>
+                </ul>
+            </div>
         </div>
         <div class="coin-list">
             <div class="top">
                 <input type="text" placeholder="코인명 검색">
-                <div><input type="checkbox" id="checkbox">보유코인만</div>
+                <div><input type="checkbox" id="checkbox"><span>보유코인만</span></div>
             </div>
-            <table>
-                <tr>
-                    <th colspan="2"></th>
-                    <th></th>
-                    <th colspan="2"></th>
-                </tr>
-                <tr>
-                    <td><input type="checkbox" id="a"><label for="a"><i class="bi bi-star-fill"></i></label></td>
-                    <td>콩트코인</td>
-                    <td>97.31%</td>
-                    <td>1,890,030,344 KRW</td>
-                    <td><span>입출금</span></td>
-                </tr>
-            </table>
+            <div class="tab">
+                <ul>
+                    <li>코인명</li>
+                    <li>보유비중</li>
+                    <li>보유수량(평가금액)</li>
+                </ul>
+                <ul class="coin">
+                    <li><input type="checkbox" id="a"><label for="a"><i class="bi bi-star-fill"></i></label></li>
+                    <li>콩트코인</li>
+                    <li>97.31%</li>
+                    <li>1,890,030,344 KRW</li>
+                    <li>입출금</li>
+                </ul>
+            </div>
         </div>
         <div class="graph">
-
+            <h2>보유자산 포트폴리오</h2>
+            <div style="position: relative; height:200px; width:320px;">
+                <canvas id="pie-chart" width="400" height="400"></canvas>
+            </div>
+            <ul>
+                <li><div class="co" style="background-color: #3e95cd;"></div>KRW<span>71.7%</span></li>
+                <li><div class="co" style="background-color: #8e5ea2;"></div>DOGE <span>20.5%</span></li>
+                <li><div class="co" style="background-color: #3cba9f;"></div>EMC2 <span>3.9%</span></li>
+                <li><div class="co" style="background-color: #e8c3b9;"></div>BCH <span>2.0%</span></li>
+                <li><div class="co" style="background-color: #c45850;"></div>IOST <span>1.9%</span></li>
+            </ul>
+            <script>
+                new Chart(document.getElementById("pie-chart"), {
+                    type: 'doughnut',
+                    data: {
+                        labels: ["KRW", "DOGE", "EMC2", "BCH", "IOST"],
+                        datasets: [{
+                            label: "",
+                            backgroundColor: ["#3e95cd", "#8e5ea2", "#3cba9f", "#e8c3b9", "#c45850"],
+                            data: [71.7,20.5,3.9,2,1.9]
+                        }]
+                    }, options: {
+                        legend: {
+                            display: false
+                        }
+                    }
+                });
+            </script>
         </div>
     </div>
 </body>
+
 </html>
