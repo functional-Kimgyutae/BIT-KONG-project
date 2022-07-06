@@ -100,7 +100,7 @@ table{
     font-size: 12px;
     line-height: 120%;
     color: black;
-    padding: 10px 28px;
+    padding: 10px 32px;
 }
 .email-input button{
     font-size: 9px;
@@ -117,7 +117,7 @@ table{
 .email-input>i{
     position: absolute;
     left: 9%;
-    top: 35%;
+    top: 36%;
 }
 .pwd-input{
     font-family: 'regular';
@@ -141,12 +141,12 @@ table{
     font-size: 12px;
     line-height: 120%;
     color: black;
-    padding: 10px 28px;
+    padding: 10px 32px;
 }
 .pwd-input>i{
     position: absolute;
     left: 9%;
-    top: 35%;
+    top: 37%;
 }
 .pwds-input{
     font-family: 'regular';
@@ -170,12 +170,12 @@ table{
     font-size: 12px;
     line-height: 120%;
     color: black;
-    padding: 10px 28px;
+    padding: 10px 32px;
 }
 .pwds-input>i{
     position: absolute;
     left: 9%;
-    top: 35%;
+    top: 37%;
 }
 .name-input{
     font-family: 'regular';
@@ -199,7 +199,7 @@ table{
     font-size: 12px;
     line-height: 120%;
     color: black;
-    padding: 10px 28px;
+    padding: 10px 32px;
 }
 .name-input>i{
     position: absolute;
@@ -228,12 +228,12 @@ table{
     font-size: 12px;
     line-height: 120%;
     color: black;
-    padding: 10px 28px;
+    padding: 10px 32px;
 }
 .call-input>i{
     position: absolute;
     left: 9%;
-    top: 35%;
+    top: 37%;
 }
 .form-btn{
     position: relative;
