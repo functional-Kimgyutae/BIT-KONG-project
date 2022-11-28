@@ -1,0 +1,237 @@
+@charset "UTF-8";
+*{
+    color: #333333;
+}
+.con{
+    height: 100vh;
+    margin-left: 300px;
+    width: calc(100vw - 300px);
+    padding-top: 20px;
+    display: flex;
+}
+.box1{
+    width: 200px;
+    height: 830px;
+    background-color: white;
+    margin-top: 30px;
+    margin-left: 50px;
+}
+.box2{
+    position: relative;
+    width: 1200px;
+    height: 800px;
+    background-color: white;
+    border-radius: 10px;
+    margin-left: 50px;
+    margin-top: 30px;
+}
+.title{
+	font-size: 24px;
+    color: #878787;
+    font-family: 'Regular';
+    padding: 10px 0px 0px 10px;
+}
+.money{
+	height: 150px;
+}
+.money img{
+    width: 170px;
+    height: 100px;
+    object-fit: contain;
+    margin-left: 20px;
+}
+.service > ul{
+	line-height: 3;
+	padding: 12px 8px;
+}
+.service >ul> li{
+	padding: 8px 0;
+	border-bottom: 1px solid #bebebe;
+}
+.email{
+	font-size: 15px;
+	font-family: 'Light';
+}
+.moneys{
+	font-size: 20px;
+	font-family: 'Bold';
+	color: red;
+}
+.service > ul > li > span{
+	font-size: 12px;
+    font-family: 'Regular';
+    color: #767676;
+}
+.service > ul > li > div{
+	height: 30px;
+	display: flex;
+    justify-content: right;
+    align-items: center;
+}
+.header{
+	color: white;
+    font-family: 'Regular';
+    padding: 0px 0px 0px 10px;
+}
+.pay-header{
+	border-radius:10px 10px 0px 0px;
+	height: 30px;
+    line-height: 30px;
+    background-color: #00000078;
+}
+.name{
+	font-size: 15px;
+    font-family: 'Regular';
+    color: #767676;
+}
+.price{
+	margin-top: 10px;
+    padding-left: 12px;
+    font-size: 24px;
+}
+.price > span{
+	color:#6C6A6C;
+}
+.price-list{
+	display: flex;
+	margin-top: 15px;
+	height: 170px;
+}
+.price-list dl{
+	flex-grow: 0;
+	flex-basis: 135px;
+	margin-left: 5px;
+}
+.price-list dl > dt > span{
+	font-size: 16px;
+}
+.price-point{
+	height: 170px;
+	border: 1px solid #ccc;
+	cursor: pointer;
+	background-color: #f3f3f3;
+}
+.action{
+	color: #dc0000;
+    border: 2px solid #dc0000 !important;
+}
+dd > ul{
+	display: flex;
+}
+dd{
+	flex-grow: 1;
+}
+dt{
+	border-top: 1px solid #bebebe;
+    padding-top: 5px;
+    font-family: 'Bold';
+}
+dd > ul > li{
+	flex-basis: 0;
+	flex-grow: 1;
+	margin-left: 7px;
+}
+.pay-money{
+	height: 50px;
+    padding: 10px;
+    background-color: #fff;
+}
+.payment{
+    height: 320px;
+    display: grid;
+    margin: 10px;
+    border: 1px solid #000;
+    grid-template-columns: 2fr 2fr;
+    font-size: 20px;
+}
+.dl{
+	width: 135px;
+    margin-left: 5px;
+    background-color: #ddd;
+    font-size: 18px;
+	font-family: 'Light';
+}
+.dd{
+	flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.dls{
+	flex-grow: 0;
+	flex-basis: 135px;
+	margin-left: 5px;
+    font-size: 15px;
+	font-family: 'Light';
+}
+.dds{
+	flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.paying{
+    width: 120px;
+    height: 50px;
+    border: none;
+    background-color: dodgerblue;
+    color: white;
+    font-size: 18px;
+    font-family: 'Regular';
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px;
+}
+.dongeham{
+    width: 120px;
+    height: 75%;
+    margin-left: 217px;
+    background-color: white;
+    border: 1px solid #767676;
+    border-radius: 5px;
+    color: #bebebe;
+    cursor: pointer;
+}
+
+.dongehamnida{
+    width: 120px;
+    height: 75%;
+    margin-left: 217px;
+    background-color: white;
+    border: 1px solid #767676;
+    border-radius: 5px;
+    color: red;
+    cursor: pointer;
+}
+.dongehae{
+	background-color: #f3f3f3;
+    position: absolute;
+    bottom: 0;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    font-size: 15px;
+}
+.dongehae > span{
+	margin-left: 8px;
+}
+.payok{
+	width: 100%;
+    height: 100%;
+    position: relative;
+	border: 1px solid #000;
+	margin-left: 7px;
+}
+.payok > span{
+	font-size: 18px;
+    padding: 10px
+}
+.donge{
+	height: 160px;
+	display: flex;
+}
+.pay-progress{
+	text-align: right;
+	padding-top: 16px;
+}

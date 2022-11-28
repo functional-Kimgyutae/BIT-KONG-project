@@ -1,0 +1,409 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css");
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    color: #333333;
+}
+.h-100 {height: 100%;}
+
+.main{
+    width: 100vw;
+    height: 100vh;
+}
+.main-menu{
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+.text-bar{
+    width: 90%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    margin: 0 auto;
+    font-family: 'bold';
+}
+.text-bar h1{
+    color: white;
+    font-size: 3vw;
+    padding: 20px;
+}
+.text-bar span{
+    color: #aaaaaa;
+    font-size: 1vw;
+}
+.main-left{
+    width: 60%;
+    height: 100%;
+    background-image: url(../image/bithong.png);
+    background-size: cover;
+}
+.main-right{
+    width: 40%;
+    height: 100%;
+    background-color: #061224;
+}
+table{
+    border-collapse: collapse;
+}
+.login-menu{
+    width: 500px;
+    height: 900px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.login{
+    width: 100%;
+    height: 80%;
+    background-color: white;
+}
+.logo{
+    width: 100%;
+    height: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo a{
+    margin-top: 10%;
+    width: 50%;
+}
+.logo > a > img{
+    width: 100%;
+}
+.input-group{
+    font-family: 'regular';
+    width: 100%;
+    height: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+.email-form{
+	position: relative;
+	width: 80%;
+	height: 30%;
+}
+.email-form input {
+	padding:20px 0 0; 
+	width:100%;
+	height:100%;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+	border:none;
+	color:black;
+	outline:none;
+	font-size: 17px;
+}
+.email-form label { 
+	position:absolute;
+	left:0%;
+	bottom:0;
+	width:100%;
+	height:100%;
+	border-bottom:1px solid #aeaeae;
+	text-align:left;
+	pointer-events:none;
+}
+.email-form label:after {
+	content:"";
+	position:absolute;
+	left:0;
+	bottom:-1px;
+	width:0;
+	height:100%;
+	border-bottom:2.5px solid #5d5b5b;
+	transition:all .3s ease;
+} /*검정색 가로줄 */
+
+.email-form label span { 
+	position: absolute;
+    left: 0;
+    bottom: 5px;
+    transition: all .3s ease;
+    font-size: 19px;
+    color: #acacac;
+}
+.email-form input:focus + label span, 
+.email-form input:valid + label span { 
+	transform:translateY(-150%);
+	font-size:14px;
+	color:#5d5b5b;
+}
+/* 포커스 될 때 검정색 가로줄이 생김 */
+.email-form input:focus + label::after,
+.email-form input:valid + label::after { 
+	width:100%;
+	transform:translateX(0);
+}
+.pwd-form{
+	position: relative;
+	width: 80%;
+	height: 30%;
+}
+.pwd-form input{
+	padding:20px 0 0; 
+	width:100%;
+	height:100%;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+	border:none;
+	color:black;
+	outline:none;
+	font-size: 17px;
+}
+.pwd-form label { 
+	position:absolute;
+	left:0%;
+	bottom:0;
+	width:100%;
+	height:100%;
+	border-bottom:1px solid #aeaeae;
+	text-align:left;
+	pointer-events:none;
+}
+.pwd-form label:after {
+	content:"";
+	position:absolute;
+	left:0;
+	bottom:-1px;
+	width:0;
+	height:100%;
+	border-bottom:2.5px solid #5d5b5b;
+	transition:all .3s ease;
+} /*검정색 가로줄 */
+
+.pwd-form label span { 
+	position: absolute;
+    left: 0;
+    bottom: 5px;
+    transition: all .3s ease;
+    font-size: 19px;
+    color: #acacac;
+}
+.pwd-form input:focus + label span, 
+.pwd-form input:valid + label span { 
+	transform:translateY(-150%);
+	font-size:14px;
+	color:#5d5b5b;
+}
+/* 포커스 될 때 검정색 가로줄이 생김 */
+.pwd-form input:focus + label::after,
+.pwd-form input:valid + label::after { 
+	width:100%;
+	transform:translateX(0);
+}
+/*.input-group>i:nth-child(2){
+    position: absolute;
+    left: 58px;
+    top: 31%;
+}
+.input-group>i:nth-child(4) {
+    position: absolute;
+    left: 58px;
+    top: 71%;
+}*/
+.form-btn{
+    position: relative;
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+.line{
+    position: absolute;
+    width: 80%;
+    height: 0;
+    border: 1px solid rgba(0, 0, 0,0.37);
+    bottom: 30%;
+    left: 10%;
+}
+#login-btn{
+    font-family: 'bold';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    width: 80%;
+    height: 40%;
+    border-radius: 7px;
+    text-align: center;
+    background-color: #5D6DFC;
+    color: white;
+    font-weight: 700;
+    font-size: 0.9vw;
+    cursor: pointer;
+}
+.find-btn{
+    position: relative;
+    width: 100%;
+    height: 23%;
+    font-size: 15px;
+    padding: 0px 40px 0px 40px;
+    text-align: center;
+    font-family: 'medium';
+}
+.find-btn > ul{
+    width: 90%;
+    margin: 0 auto;
+    height: 20%;
+    display: flex;
+}
+.find-btn li{
+    position: relative;
+    width: 100%;
+    height: 20px;
+}
+.find-btn li:nth-child(2)::before{
+    position: absolute;
+    content: "|";
+    left: -7px;
+}
+.find-btn li::before{
+    position: absolute;
+    content: "|";
+    left: 7px;
+}
+.find-btn li:first-child::before{
+    content: none;
+}
+.input-title{
+	text-align: center;
+}
+.input-title h2{
+	font-size: 35px;
+	font-family: 'Bold';
+}
+.input-title span{
+	font-size: 17px;
+    font-family: 'Regular';
+}
+.find-name{
+	position: relative;
+	width: 80%;
+	height: 30%;
+}
+.find-name .input-name{
+	padding:20px 0 0; 
+	width:100%;
+	height:100%;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+	border:none;
+	color:black;
+	outline:none;
+	font-size: 17px;
+}
+.find-name label { 
+	position:absolute;
+	left:0%;
+	bottom:0;
+	width:100%;
+	height:100%;
+	border-bottom:1px solid #aeaeae;
+	text-align:left;
+	pointer-events:none;
+}
+.find-name label:after {
+	content:"";
+	position:absolute;
+	left:0;
+	bottom:-1px;
+	width:0;
+	height:100%;
+	border-bottom:2.5px solid #5d5b5b;
+	transition:all .3s ease;
+} /*검정색 가로줄 */
+
+.find-name label span { 
+	position: absolute;
+    left: 0;
+    bottom: 5px;
+    transition: all .3s ease;
+    font-size: 19px;
+    color: #acacac;
+}
+.find-name input:focus + label span, 
+.find-name input:valid + label span { 
+	transform:translateY(-150%);
+	font-size:14px;
+	color:#5d5b5b;
+}
+/* 포커스 될 때 검정색 가로줄이 생김 */
+.find-name input:focus + label::after,
+.find-name input:valid + label::after { 
+	width:100%;
+	transform:translateX(0);
+}
+.find-phone{
+	position: relative;
+	width: 80%;
+	height: 30%;
+}
+.find-phone .input-phone{
+	padding:20px 0 0; 
+	width:100%;
+	height:100%;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+	border:none;
+	color:black;
+	outline:none;
+	font-size: 17px;
+}
+.find-phone label { 
+	position:absolute;
+	left:0%;
+	bottom:0;
+	width:100%;
+	height:100%;
+	border-bottom:1px solid #aeaeae;
+	text-align:left;
+	pointer-events:none;
+}
+.find-phone label:after {
+	content:"";
+	position:absolute;
+	left:0;
+	bottom:-1px;
+	width:0;
+	height:100%;
+	border-bottom:2.5px solid #5d5b5b;
+	transition:all .3s ease;
+} /*검정색 가로줄 */
+
+.find-phone label span { 
+	position: absolute;
+    left: 0;
+    bottom: 5px;
+    transition: all .3s ease;
+    font-size: 19px;
+    color: #acacac;
+}
+.find-phone input:focus + label span, 
+.find-phone input:valid + label span { 
+	transform:translateY(-150%);
+	font-size:14px;
+	color:#5d5b5b;
+}
+/* 포커스 될 때 검정색 가로줄이 생김 */
+.find-phone input:focus + label::after,
+.find-phone input:valid + label::after { 
+	width:100%;
+	transform:translateX(0);
+}

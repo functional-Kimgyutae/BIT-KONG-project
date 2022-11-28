@@ -1,0 +1,173 @@
+*{
+    color: #333333;
+}
+.con{
+    height: 100vh;
+    margin-left: 300px;
+    width: calc(100vw - 300px);
+    padding-top: 20px;
+    display: flex;
+}
+.box1{
+    width: 200px;
+    height: 730px;
+    background-color: white;
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-left: 50px;
+}
+.box2{
+    position: relative;
+    width: 1280px;
+    height: 870px;
+    background-color: white;
+    border-radius: 10px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+.service-title{
+    width: 100%;
+    height: 80px;
+    background-color: #4B5461;
+    display: flex;
+    align-items: center;
+}
+.service-title > h3{
+    color: white;
+    font-size: 22px;
+    font-family: 'Light';
+    font-weight: 600;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+.service-submenu{
+    width: 100%;
+}
+.service-submenu > ul li{
+    height: 50px;
+    text-align: left;
+    line-height: 40px;
+}
+.service-submenu > ul > li > a{
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+    padding-top: 10px;
+    font-size: 16px;
+    padding-left: 20px;
+}
+.service-submenu > ul > li > a:hover{
+    text-decoration: underline;
+}
+.on{
+    background: #f5f6fa;
+    color: #1261c4;
+    font-family: 'Bold';
+}
+.table-b{
+    width: 100%;
+    margin: 20px 0 0;
+}
+table{
+    border-collapse: collapse;
+    width: 100%;
+    font-family: 'Regular';
+    margin: 0 auto;
+}
+table tr{
+    width: 90%;
+    height: 50px;
+    text-align: center;
+}
+table td{
+    font-weight: bold;
+    font-family: 'Regular';
+    opacity: 0.6;
+}
+.td2{
+	width: 100%;
+	height: 500px;
+}
+.n-title{
+	width: 100%;
+	height: 50px;
+	font-size: 20px;
+}
+.n-write{
+	width: 100%;
+	height: 100%;
+	font-size: 30px;
+}
+.input-div{
+	width: 150px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btn-write{
+    width: 90px;
+    height: 40px;
+    background-color: #02020252;
+    font-size: 16px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+table td:first-child{
+    opacity: 1;
+    padding: 10px;
+}
+table td:first-child > p{
+    padding-left:50px;   
+}
+table td > p > a{
+    color: black;
+}
+.paglist{
+    position: absolute;
+    width: 100%;
+    height: 50px;
+    bottom: 0;
+}
+.paglist > .pagination{
+    width: 100%;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    font-family: 'Bold';
+}
+.pagination li{
+    border: 1px solid #5D6DFC;
+    width: 25px;
+    line-height: 25px;
+    text-align: center;
+    margin-left: 10px;
+    border-radius: 50px;
+}
+.pagination a{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.pagination > li:first-child > a{
+    color: #5D6DFC;
+}
+.pagination > li:last-child > a{
+    color: #5D6DFC;
+}
+.action{
+    border-radius: 50px;
+    background-color: #5D6DFC;
+    color: white;
+}
+.notice-write{
+	position: absolute;
+    top: 70px;
+    left: 58%;
+    font-size: 20px;
+}

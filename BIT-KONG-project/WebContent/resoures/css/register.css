@@ -1,0 +1,558 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css");
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+.h-100 {height: 100%;}
+
+.main{
+    width: 100vw;
+    height: 100vh;
+}
+.main-menu{
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+.text-bar{
+    width: 90%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    margin: 0 auto;
+    font-family: 'bold';
+}
+.text-bar h1{
+    color: white;
+    font-size: 3vw;
+    padding: 20px;
+}
+.text-bar span{
+    color: #aaaaaa;
+    font-size: 1vw;
+}
+.main-left{
+    width: 60%;
+    height: 100%;
+    background-image: url(../image/bithong.png);
+    background-size: cover;
+}
+.main-right{
+    width: 40%;
+    height: 100%;
+    background-color: #061224;
+}
+table{
+    border-collapse: collapse;
+}
+.login-menu{
+    width: 500px;
+    height: 900px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.login{
+    width: 100%;
+    height: 80%;
+    background-color: white;
+}
+.logo{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo a{
+    margin-top: 5%;
+    width: 40%;
+}
+.logo > a > img{
+    width: 100%;
+}
+.email-input{
+	position:relative;
+	margin-top:5px;
+    font-family: 'regular';
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-bottom: 5px;
+}
+.email-input input{
+	border: none;
+    width: 70%;
+    height: 80%;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    color: black;
+    padding: 20px 0 0;
+    outline: none;
+}
+.email-input label { 
+	position:absolute;
+	left:6%;
+	bottom:5px;
+	width:70%;
+	height:100%;
+	border-bottom:1px solid #aeaeae;
+	text-align:left;
+	pointer-events:none;
+}
+.email-input label:after {
+	content:"";
+	position:absolute;
+	left:0;
+	bottom:-1px;
+	width:0;
+	height:100%;
+	border-bottom:2.5px solid #5d5b5b;
+	transition:all .3s ease;
+} /*검정색 가로줄 */
+.email-input label span { 
+	position: absolute;
+    left: 2px;
+    bottom: 5px;
+    transition: all .3s ease;
+    font-size: 19px;
+    color: #acacac;
+}
+.email-input input:focus + label span, 
+.email-input input:valid + label span { 
+	transform:translateY(-150%);
+	font-size:14px;
+	color:#5d5b5b;
+}
+/* 포커스 될 때 검정색 가로줄이 생김 */
+.email-input input:focus + label::after,
+.email-input input:valid + label::after { 
+	width:100%;
+	transform:translateX(0);
+}
+.email-input button[disabled]{
+	font-size: 12px;
+    border: none;
+    margin-left: 4%;
+    color: black;
+    background: #ddd;
+    box-shadow: 1px 1px 5px rgba(0 0 0 /25%);
+    border-radius: 7px;
+    width: 12%;
+    height: 80%;
+    cursor: pointer;
+}
+.email-input button{
+    font-size: 12px;
+    border: none;
+    margin-left: 4%;
+    color: white;
+    background: #5D6DFC;
+    box-shadow: 1px 1px 5px rgba(0 0 0 /25%);
+    border-radius: 7px;
+    width: 12%;
+    height: 80%;
+    cursor: pointer;
+}
+.email-input>i{
+    position: absolute;
+    left: 9%;
+    top: 35%;
+}
+.pwd-input{
+	position:relative;
+    font-family: 'regular';
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.pwd-input input{
+    border: none;
+    width: 86%;
+    height: 80%;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    color: black;
+    padding: 20px 0 0;
+    outline: none;
+}
+.pwd-input label { 
+	position:absolute;
+	left:6%;
+	bottom:5px;
+	width:86%;
+	height:100%;
+	border-bottom:1px solid #aeaeae;
+	text-align:left;
+	pointer-events:none;
+}
+.pwd-input label:after {
+	content:"";
+	position:absolute;
+	left:0;
+	bottom:-1px;
+	width:0;
+	height:100%;
+	border-bottom:2.5px solid #5d5b5b;
+	transition:all .3s ease;
+} /*검정색 가로줄 */
+
+.pwd-input label span { 
+	position: absolute;
+    left: 2px;
+    bottom: 5px;
+    transition: all .3s ease;
+    font-size: 19px;
+    color: #acacac;
+}
+.pwd-input input:focus + label span, 
+.pwd-input input:valid + label span { 
+	transform:translateY(-150%);
+	font-size:14px;
+	color:#5d5b5b;
+}
+/* 포커스 될 때 검정색 가로줄이 생김 */
+.pwd-input input:focus + label::after,
+.pwd-input input:valid + label::after { 
+	width:100%;
+	transform:translateX(0);
+}
+.pwds-input{
+	position:relative;
+    font-family: 'regular';
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.pwds-input input{
+    border: none;
+    width: 86%;
+    height: 80%;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    color: black;
+    padding: 20px 0 0;
+    outline: none;
+}
+.pwds-input label { 
+	position:absolute;
+	left:6%;
+	bottom:5px;
+	width:86%;
+	height:100%;
+	border-bottom:1px solid #aeaeae;
+	text-align:left;
+	pointer-events:none;
+}
+.pwds-input label:after {
+	content:"";
+	position:absolute;
+	left:0;
+	bottom:-1px;
+	width:0;
+	height:100%;
+	border-bottom:2.5px solid #5d5b5b;
+	transition:all .3s ease;
+} /*검정색 가로줄 */
+
+.pwds-input label span { 
+	position: absolute;
+    left: 2px;
+    bottom: 5px;
+    transition: all .3s ease;
+    font-size: 19px;
+    color: #acacac;
+}
+.pwds-input input:focus + label span, 
+.pwds-input input:valid + label span { 
+	transform:translateY(-150%);
+	font-size:14px;
+	color:#5d5b5b;
+}
+/* 포커스 될 때 검정색 가로줄이 생김 */
+.pwds-input input:focus + label::after,
+.pwds-input input:valid + label::after { 
+	width:100%;
+	transform:translateX(0);
+}
+.name-input{
+	position:relative;
+	margin-top:5px;
+    font-family: 'regular';
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.name-input input{
+    border: none;
+    width: 86%;
+    height: 80%;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    color: black;
+    padding: 20px 0 0;
+    outline: none;
+}
+.name-input label { 
+	position:absolute;
+	left:6%;
+	bottom:5px;
+	width:86%;
+	height:100%;
+	border-bottom:1px solid #aeaeae;
+	text-align:left;
+	pointer-events:none;
+}
+.name-input label:after {
+	content:"";
+	position:absolute;
+	left:0;
+	bottom:-1px;
+	width:0;
+	height:100%;
+	border-bottom:2.5px solid #5d5b5b;
+	transition:all .3s ease;
+} /*검정색 가로줄 */
+
+.name-input label span { 
+	position: absolute;
+    left: 2px;
+    bottom: 5px;
+    transition: all .3s ease;
+    font-size: 19px;
+    color: #acacac;
+}
+.name-input input:focus + label span, 
+.name-input input:valid + label span { 
+	transform:translateY(-150%);
+	font-size:14px;
+	color:#5d5b5b;
+}
+/* 포커스 될 때 검정색 가로줄이 생김 */
+.name-input input:focus + label::after,
+.name-input input:valid + label::after { 
+	width:100%;
+	transform:translateX(0);
+}
+.call-input{
+	position:relative;
+    font-family: 'regular';
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.call-input input{
+    border: none;
+    width: 86%;
+    height: 80%;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    color: black;
+    padding: 20px 0 0;
+    outline: none;
+}
+.call-input label { 
+	position:absolute;
+	left:6%;
+	bottom:5px;
+	width:86%;
+	height:100%;
+	border-bottom:1px solid #aeaeae;
+	text-align:left;
+	pointer-events:none;
+}
+.call-input label:after {
+	content:"";
+	position:absolute;
+	left:0;
+	bottom:-1px;
+	width:0;
+	height:100%;
+	border-bottom:2.5px solid #5d5b5b;
+	transition:all .3s ease;
+} /*검정색 가로줄 */
+
+.call-input label span { 
+	position: absolute;
+    left: 2px;
+    bottom: 5px;
+    transition: all .3s ease;
+    font-size: 19px;
+    color: #acacac;
+}
+.call-input input:focus + label span, 
+.call-input input:valid + label span { 
+	transform:translateY(-150%);
+	font-size:14px;
+	color:#5d5b5b;
+}
+/* 포커스 될 때 검정색 가로줄이 생김 */
+.call-input input:focus + label::after,
+.call-input input:valid + label::after { 
+	width:100%;
+	transform:translateX(0);
+}
+.form-btn{
+    position: relative;
+    width: 100%;
+    height: 18%;
+    display: flex;
+    justify-content: center;
+}
+#registerbtn{
+    font-family: 'bold';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    width: 86%;
+    margin-top: 8%;
+    height: 40%;
+    border-radius: 7px;
+    text-align: center;
+    background-color: #5D6DFC;
+    color: white;
+    font-weight: 700;
+    font-size: 16px;
+    cursor: pointer;
+}
+.checkps{
+	position: absolute;
+	bottom: -14px;
+	left: 32px;
+}
+.checkpwd{
+	position: absolute;
+}
+.email-select{
+	border: none;
+    width: 18%;
+    height: 70%;
+    background: #fcfcfd;
+    box-shadow: 1px 1px 5px rgb(0 0 0 / 25%);
+    border-radius: 7px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 120%;
+    color: black;
+    padding: 0px 5px 0px 5px;
+}
+.email-button{
+	font-family: 'regular';
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.email-button input{
+	border: none;
+    width: 70%;
+    height: 80%;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    color: black;
+    padding: 20px 0 0;
+    outline: none;
+}
+.email-button label { 
+	position:absolute;
+	left:6%;
+	bottom:5px;
+	width:70%;
+	height:100%;
+	border-bottom:1px solid #aeaeae;
+	text-align:left;
+	pointer-events:none;
+}
+.email-button label:after {
+	content:"";
+	position:absolute;
+	left:0;
+	bottom:-1px;
+	width:0;
+	height:100%;
+	border-bottom:2.5px solid #5d5b5b;
+	transition:all .3s ease;
+} /*검정색 가로줄 */
+
+.email-button label span { 
+	position: absolute;
+    left: 2px;
+    bottom: 5px;
+    transition: all .3s ease;
+    font-size: 19px;
+    color: #acacac;
+}
+.email-button input:focus + label span, 
+.email-button input:valid + label span { 
+	transform:translateY(-150%);
+	font-size:14px;
+	color:#5d5b5b;
+}
+/* 포커스 될 때 검정색 가로줄이 생김 */
+.email-button input:focus + label::after,
+.email-button input:valid + label::after { 
+	width:100%;
+	transform:translateX(0);
+}
+.email-button button[disabled]{
+	font-size: 12px;
+    border: none;
+    margin-left: 4%;
+    color: black;
+    background: #ddd;
+    box-shadow: 1px 1px 5px rgb(0 0 0 / 25%);
+    border-radius: 7px;
+    width: 12%;
+    height: 80%;
+}
+.email-button button{
+	font-size: 12px;
+    border: none;
+    margin-left: 4%;
+    color: white;
+    background: #5D6DFC;
+    box-shadow: 1px 1px 5px rgb(0 0 0 / 25%);
+    border-radius: 7px;
+    width: 12%;
+    height: 80%;
+    cursor: pointer;
+}
